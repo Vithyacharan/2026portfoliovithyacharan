@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vithya Charan Product & Ui/Ux Designer </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- ═══ NAV ═══ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#header" class="nav-logo">VC<span class="dot">.</span></a>
+      <ul class="nav-links" id="sidemenu">
+        <li><a href="#header" onclick="closemenu()">Home</a></li>
+        <li><a href="#about" onclick="closemenu()">About</a></li>
+        <li><a href="#services" onclick="closemenu()">Services</a></li>
+        <li><a href="#portfolio" onclick="closemenu()">Work</a></li>
+        <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+        <button class="menu-close" onclick="closemenu()"><i class="fa-solid fa-xmark"></i></button>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+      <button class="hamburger" onclick="openmenu()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="header">
+    <div class="aurora">
+      <div class="aurora-blob a1"></div>
+      <div class="aurora-blob a2"></div>
+      <div class="aurora-blob a3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Available for work ✦</div>
+      <h1 class="hero-title reveal">
+        <span class="line">Hi, I'm</span>
+        <span class="line accent-text">Vithya Charan</span>
+        <span class="line thin">Product & Ux/Ui Designer </span>
+      </h1>
+      <p class="hero-sub reveal">Crafting digital experiences from <strong>Bangalore</strong> — where clarity meets creativity.</p>
+      <div class="hero-actions reveal">
+        <a href="#portfolio" class="btn-primary">View my work</a>
+        <a href="#about" class="btn-ghost">About me <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <!-- Ticker -->
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span>UI/UX Design</span><span class="sep">✦</span>
+        <span>Web Design</span><span class="sep">✦</span>
+        <span>App Design</span><span class="sep">✦</span>
+        <span>Figma</span><span class="sep">✦</span>
+        <span>User Research</span><span class="sep">✦</span>
+        <span>Prototyping</span><span class="sep">✦</span>
+        <span>UI/UX Design</span><span class="sep">✦</span>
+        <span>Web Design</span><span class="sep">✦</span>
+        <span>App Design</span><span class="sep">✦</span>
+        <span>Figma</span><span class="sep">✦</span>
+        <span>User Research</span><span class="sep">✦</span>
+        <span>Prototyping</span><span class="sep">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <div class="img-frame">
+            <img src="vc.png" alt="Vithya Charan">
+          </div>
+          <div class="floating-tag tag1">✦ Product Designer</div>
+          <div class="floating-tag tag2">Bangalore</div>
+        </div>
+        <div class="about-text reveal">
+          <p class="section-label">/ About me</p>
+          <h2 class="section-title">Designing with <span class="accent-text">purpose</span></h2>
+          <p class="about-desc">A fresh and enthusiastic mind with strong design and communication skills — eager to learn, grow, and contribute meaningful digital experiences to the world.</p>
+
+          <div class="tab-titles">
+            <button class="tab-link active-link" onclick="opentab('skills', event)">Skills</button>
+            <button class="tab-link" onclick="opentab('education', event)">Education</button>
+            <button class="tab-link" onclick="opentab('Experience', event)">Experience</button>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <div class="skill-item">
+              <span class="skill-tag">UI/UX</span>
+              <p>Designing Web & App interfaces</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-tag">Website</span>
+              <p>Web app Design & Development</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-tag">App Design</span>
+              <p>Application Design — Android & iOS</p>
+            </div>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <div class="skill-item">
+              <span class="skill-tag">2025</span>
+              <p>UI/UX Design — Design Boat, Bangalore</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-tag">2024</span>
+              <p>HTML & CSS — Code Camp (Online)</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-tag">2021–24</span>
+              <p>B.Com — Dr G R Damodaran College, Coimbatore</p>
+            </div>
+          </div>
+          <div class="tab-contents" id="Experience">
+            <div class="skill-item">
+              <span class="skill-tag">Sep - dec 2025</span>
+              <p>Smallfare services pvt ltd (Ui/Ux Design Intern)</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-tag">Apr 2026 - Present </span>
+              <p>NRI Infra Tech - Bazar mela pvt ltd (Ui/Ux Designer)</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section id="services">
+    <div class="container">
+      <p class="section-label reveal">/ Capabilities</p>
+      <h2 class="section-title reveal">What I <span class="accent-text">bring</span></h2>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Design</h3>
+          <p>Clean, responsive, and modern web design focused on usability and smooth interactions that put users first.</p>
+          <a href="#" class="card-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal featured-card">
+          <div class="service-icon"><i class="fa-brands fa-figma"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Thoughtful, user-centred design focused on clarity, flow, and functionality — creating engaging experiences.</p>
+          <a href="#" class="card-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>App Design</h3>
+          <p>Modern, user-friendly application design focused on seamless navigation and intuitive interactions.</p>
+          <a href="#" class="card-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PORTFOLIO ═══ -->
+  <section id="portfolio">
+    <div class="container">
+      <p class="section-label reveal">/ Selected work</p>
+      <h2 class="section-title reveal">My <span class="accent-text">projects</span></h2>
+      <div class="bento-grid">
+
+        <a href="https://www.behance.net/gallery/226208015/Ux-case-study" target="_blank" class="bento-card card-lg reveal">
+          <div class="bento-img">
+            <img src="casestudy.png" alt="UX Case Study">
+            <div class="bento-overlay"></div>
+          </div>
+          <div class="bento-info">
+            <span class="bento-tag">UX Research</span>
+            <h3>UX Case Study</h3>
+            <p>A thrifting app that uses AI to simplify buying & selling.</p>
+            <div class="bento-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/225775907/Ios-presentation-(Thrift-application)" target="_blank" class="bento-card reveal">
+          <div class="bento-img">
+            <img src="ios.png" alt="iOS Presentation">
+            <div class="bento-overlay"></div>
+          </div>
+          <div class="bento-info">
+            <span class="bento-tag">iOS</span>
+            <h3>iOS Presentation</h3>
+            <p>Sleek, intuitive AI-powered thrifting app.</p>
+            <div class="bento-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/225775533/Android-Presentation-(Thrift-app)" target="_blank" class="bento-card reveal">
+          <div class="bento-img">
+            <img src="android.png" alt="Android Presentation">
+            <div class="bento-overlay"></div>
+          </div>
+          <div class="bento-info">
+            <span class="bento-tag">Android</span>
+            <h3>Android Presentation</h3>
+            <p>AI-powered Android app for pre-loved goods.</p>
+            <div class="bento-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/225774093/Website-Presentation" target="_blank" class="bento-card card-wide reveal">
+          <div class="bento-img">
+            <img src="website.png" alt="Website Presentation">
+            <div class="bento-overlay"></div>
+          </div>
+          <div class="bento-info">
+            <span class="bento-tag">Web</span>
+            <h3>Website Presentation</h3>
+            <p>A clean landing page showcasing smart thrifting made simple.</p>
+            <div class="bento-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </div>
+        </a>
+
+      </div>
+      <div class="center-btn reveal">
+        <a href="https://www.behance.net/vizalvizal" target="_blank" class="btn-primary">See all on Behance</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="section-label">/ Get in touch</p>
+          <h2 class="section-title">Let's <span class="accent-text">talk</span></h2>
+          <p class="contact-desc">Have a project in mind? I'd love to hear about it. Drop me a message and let's make something great.</p>
+          <div class="contact-details">
+            <a href="mailto:vizalvizal18@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+              <span>vizalvizal18@gmail.com</span>
+            </a>
+            <a href="tel:9159973180" class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <span>+91 9159973180</span>
+            </a>
+          </div>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/vithya-charan-i-866b60368/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.behance.net/vizalvizal" target="_blank" class="social-btn"><i class="fa-brands fa-behance"></i></a>
+          </div>
+          <a href="charan_s_Resume-2.pdf" download class="btn-primary" style="margin-top:2rem;display:inline-flex;align-items:center;gap:.5rem;"><i class="fa-solid fa-download"></i> Download CV</a>
+        </div>
+
+        <div class="contact-right reveal">
+          <form name="submit-to-google-sheet" class="contact-form">
+            <div class="form-group">
+              <input type="text" name="Name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="Email" placeholder="Your email" required>
+            </div>
+            <div class="form-group">
+              <textarea name="Message" rows="5" placeholder="Tell me about your project…"></textarea>
+            </div>
+            <button type="submit" class="btn-primary submit-btn">Send message <i class="fa-solid fa-paper-plane"></i></button>
+            <span id="msg"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© 2026 Vithya Charan I. — Designed & developed with passion.</p>
+      <p class="footer-sub">Bangalore, India</p>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
